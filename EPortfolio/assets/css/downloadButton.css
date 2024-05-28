@@ -1,0 +1,28 @@
+.resume .downloadCV button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.column-images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#image-internship {
+    margin: 0px auto 50px auto;
+}
+
+
+.documentation_text {
+    text-align: justify;
+}
+
+tbody .table_first_col {
+    padding: 0 20px 5px 0;
+}
