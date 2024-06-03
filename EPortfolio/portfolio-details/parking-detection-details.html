@@ -126,9 +126,10 @@
                 <div class="portfolio-description">
                     <h2>Detecting free parkingspots</h2>
                     <p>
-                        This group project, part of the Project 4.0 course at Thomas More Geel, aimed to solve parking and charging issues at Elision headquarters in Hasselt, where 24 charging stations are insufficient for the growing number of electric vehicles. 
-                        To address this, we developed an application with key features including a chat function for communication, a user-friendly design, and notifications for available charging stations and fully charged cars. 
-                        The application, built using Next.js, provides a real-time visual overview of the parking lot with numbered spots, indicating available and occupied spots. 
+                        This group project, part of the Project 4.0 course at Thomas More Geel, aimed to solve parking and charging issues at Elision headquarters in Hasselt, where 24 charging stations are insufficient for the growing number of electric vehicles.
+                        To address this, we developed an application with key features including a chat function for communication, a user-friendly design, and notifications for available charging stations and fully charged cars.
+                        The application, built using Next.js, provides a real-time visual overview of the parking lot with numbered spots, indicating available and occupied spots.
+                        To achieve real-time visual updates, we used a Raspberry Pi that sends an image to a database every 10 seconds. My detection model then updates the application accordingly.
                         I contributed by implementing a Python script using a YOLOv8 model to detect cars and update the parking spot status in the cloud database via an AWS Lambda function, ensuring efficient parking management.
                     </p>
                 </div>

@@ -26,3 +26,26 @@
 tbody .table_first_col {
     padding: 0 20px 5px 0;
 }
+
+.portfolio .portfolio-wrap .portfolio-links-mobile {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+    .portfolio .portfolio-wrap .portfolio-links-mobile a {
+        
+        font-size: 28px;
+        text-align: center;
+        width: 50%;
+        text-decoration: none;
+    }
+
+        .portfolio .portfolio-wrap .portfolio-links-mobile a + a {
+            border-left: 1px solid #37b3ed;
+        }
