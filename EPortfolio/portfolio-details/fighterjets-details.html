@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Portfolio Details - Airbnb</title>
+    <title>Portfolio Details - Fighterjet image classification</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -74,10 +74,10 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Portfolio Details - Airbnb</h2>
+                    <h2>Portfolio Details - Fighterjet image classification</h2>
                     <ol>
                         <li><a href="../index.html">Home</a></li>
-                        <li>Airbnb</li>
+                        <li>Fighterjets</li>
                     </ol>
                 </div>
 
@@ -94,15 +94,11 @@
                             <div class="swiper-wrapper align-items-center">
 
                                 <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/airbnb-city-comparison.png" alt="">
+                                    <img src="../assets/img/portfolio/fighterjet-streamlit.png" alt="">
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/airbnb-reviewscores.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/datamodel-airbnb.png" alt="">
+                                    <img src="../assets/img/portfolio/fighterjet-confusionmatrix.png" alt="">
                                 </div>
 
                             </div>
@@ -116,7 +112,7 @@
                             <ul>
                                 <li><strong>Category</strong>: School project</li>
                                 <li><strong>Client</strong>: Thomas More</li>
-                                <li><strong>Project date</strong>: 4 December 2023</li>
+                                <li><strong>Project date</strong>: 13 December 2023</li>
                             </ul>
                         </div>
 
@@ -124,31 +120,38 @@
 
                 </div>
                 <div class="portfolio-description">
-                    <h2>Airbnb Qlik project</h2>
+                    <h2>Fighterjet image classification</h2>
                     <p>
-                        The goal of the dashboarding project is to create a dashboard in Qlik Sense that provides insight into Airbnb rentals over the past year in Antwerp, Brussels and Ghent.
-                        This was an individual assignement and we could decide who our target audience is.<br /><br />
+                        This group project was made for my Big Data course at Thomas More Geel.
+                        The goal of this assignment was to create an image classification model using deep learning techniques seen in class.
+                        First we had to collect a dataset of images that could be categorized into five different classes.
+                        These classes had to be challenging enough for our model so no 'cat vs dog vs horse'-type of classifications.<br /><br />
+                        We chose to collect a dataset of five different fighter jets:
 
-                        The project was divided into two parts.
-                        The first part was comming up with a story to tell through your dashboard and creating the dashboard.
-                        I decided to focus on tourists to help them choose an airbnb rental in these three major cities.
-                        Once my story was chosen, the next step was the design of a solid underlying data model.
-                        To get this schema available in Qlik Sense I had to Extract-Transform-Load my data with the Qlik Scripting Language.<br /><br />
+                        <ul>
+                            <li>F-1117 Nighthawk</li>
+                            <li>F-16 Fighting Falcon</li>
+                            <li>F-22 Raptor</li>
+                            <li>F-4 Phantom</li>
+                            <li>MiG-29 Fulcrum</li>
+                        </ul>
 
-                        When the dashboard was finished the second part of the assignement began.
-                        The Goal of this second part is to create a small web application that tells the story behind the data.
-                        To complete this part I created a web application using HTML, CSS and Javascript to load my dashboard visualisations through web intigration that controls how Qlik Sense interacts with external web applications.
+                        To create a state of the art deep learning model we used techniques like fastai / Pytorch modelling and transfer learning.
+                        By building a webscraper using Selenium framework, we collected +-150 images of each category to train our model.
+                        When our model was trained we applied ROC and AUC metrics to check the quality of our classification model.
+                        As an extra we also compared our model to the performance of Google's TeachableMachine. As we expected our model was the better one.
 
+                        The last step of this project was to create an interactive web application using Streamlit, where users can test our model by uploading an image of a fighter jet.
+                        After uploading an image of a fighter jet the web application will tell you what type of fighter jet it is and how certain it is expressed in a percentage.
                     </p>
 
                     <h3>Key learnings:</h3>
                     <ul>
-                        <li>Creating a data model in Qlik</li>
-                        <li>Creating insights into data using Qlik</li>
-                        <li>Integrate visualizations from Qlik Sense dashboard into a web applications</li>
+                        <li>Creating a deep learning image classification model</li>
+                        <li>Use different techniques to check the quality of a model</li>
+                        <li>Implementing our model into an interactive web application</li>
                     </ul>
-
-                    
+                                        
                 </div>
 
             </div>
